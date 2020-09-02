@@ -3,6 +3,8 @@
 // @namespace   Dragonfly integrations
 // @match       https://mycourses.rit.edu/*
 // @downloadURL https://raw.githubusercontent.com/qxzcode/dragonfly-configuration/master/userscripts/myCourses.user.js
+// @homepageURL https://github.com/qxzcode/dragonfly-configuration
+// @supportURL  https://github.com/qxzcode/dragonfly-configuration/issues
 // @require     https://raw.githubusercontent.com/qxzcode/dragonfly-configuration/master/userscripts/common.js
 // @grant       none
 // @version     1.0
