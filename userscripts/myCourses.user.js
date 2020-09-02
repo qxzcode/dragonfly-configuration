@@ -33,5 +33,12 @@ createShortcut('n', () => {
 // alt-shift-0: clicks on the course title (goes to the course homepage)
 createShortcut('0', () => getElement('d2l-navigation-main-header .d2l-navigation-s-title-container > .d2l-navigation-s-link').click());
 
-// alt-shift-1: clicks on the "Content" tab
-createShortcut('1', () => getElement('.d2l-navigation-s-main-wrapper > .d2l-navigation-s-item > a', e => e.textContent === 'Content').click());
+// alt-shift-<number>: click on different course tabs
+function createTabShortcut(key, tabName) {
+    createShortcut(key, () => getElement('.d2l-navigation-s-main-wrapper > .d2l-navigation-s-item > a', e => e.textContent === tabName).click());
+}
+createTabShortcut('1', 'Content');
+createTabShortcut('2', 'Assignments');
+createTabShortcut('3', 'Discussions');
+createTabShortcut('4', 'Quizzes');
+createTabShortcut('5', 'Grades');
