@@ -35,7 +35,7 @@ createShortcut('0', () => getElement('d2l-navigation-main-header .d2l-navigation
 
 // alt-shift-<number>: click on different course tabs
 function createTabShortcut(key, tabName) {
-    createShortcut(key, () => getElement('.d2l-navigation-s-main-wrapper > .d2l-navigation-s-item > a', e => e.textContent === tabName).click());
+    createShortcut(key, () => getElement('.d2l-navigation-s-main-wrapper > .d2l-navigation-s-item > a', e => e.firstChild.textContent === tabName).click());
 }
 createTabShortcut('1', 'Content');
 createTabShortcut('2', 'Assignments');
